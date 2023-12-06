@@ -1,0 +1,464 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+html,body{
+    font-family: 'DM Sans', sans-serif;
+    height: 100%;
+    min-width: 320px;
+}
+[class*="__container"]{
+    max-width: 1300px;
+    margin:0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+
+
+}
+.wrapper{
+    background-color: #363f46;
+    min-height: 100%;
+    overflow: clip;
+    display: flex;
+    flex-direction: column;
+   
+}
+/* .pages{ background-color: #363f46;} */
+
+.page{
+    flex:1 1 auto;
+   
+    
+}
+h1,h2,h3,h4,h5,h6,a,li,ul{
+    font-size: inherit;
+    font-weight: inherit;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    color: inherit;
+}
+img{
+    display:inline-block;
+    vertical-align: top;
+}
+button{
+    line-height: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    cursor: pointer;
+    color: inherit;
+    background-color:transparent;
+}
+.header__content{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top:20px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.header__logo{
+    width: 160px;
+height: 33px;
+}
+.header__item{
+    color: #FFF;
+font-size: 17px;
+font-style: normal;
+font-weight: 400;
+line-height: 27px;
+}
+.header__list{
+    display: flex;
+    gap:40px;
+    
+}
+.header__item{
+    position: relative;
+}
+.header__item a:hover{
+    color:#118DA8;
+    transition-duration: 500ms;
+}
+.header__item a::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: -8px;
+    transform: scaleX(0);
+    background-color:#118DA8 ;
+}
+.header__item a:hover::after{
+    transform: scaleX(1);
+    transition-duration: 500ms;
+}
+
+.podcast__content{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 90px;
+}
+.podcast__text{
+    margin-left: 60px;
+    margin-top: 270px;
+}
+.podcast__title{
+    color: #FFF;
+font-size: 70px;
+font-style: normal;
+font-weight: 400;
+line-height: 88px; /* 125.714% */
+margin-bottom: 90px;
+}
+
+.podcast__img img{
+    width: 650px;
+    height: 873px;
+      
+}
+.podcast__label{
+    color: #FFF;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; 
+margin-bottom: 15px;
+}
+.podcast__list{
+    display: flex;
+    gap: 10px;
+}
+.episod__content,
+.inform__content{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.episod__line{
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+.episod__title{
+    color:#FFF;
+font-size: 64px;
+font-style: normal;
+font-weight: 400;
+line-height: 79.2px; 
+}
+.button{
+    margin-top: 25px;
+    border-radius: 5px;
+    padding: 12px 15px 12px 20px;
+    color:#FFF;
+    text-align: center;
+    background-color: #118DA8;
+font-size: 17px;
+font-style: normal;
+font-weight: 400;
+line-height: 27px;
+}
+
+.episod1,
+.episod2,
+.episod3{
+    margin-top: 65px;
+    border-radius: 32px;
+background: #000;
+display: flex;
+align-items: center;
+margin-bottom: 60px;
+padding: 40px;
+}
+.episod3{
+    margin-bottom: 160px;
+}
+
+.episod1-con,
+.episod2-con,
+.episod3-con{
+    margin-left: 53px;
+    
+}
+.episod1__label,
+.episod1__label {
+    padding-left: 16px;
+    padding-right: 16px;
+    display: inline;
+margin-bottom: 40px;
+text-align: center;
+    color: #FFF;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 27px;
+border-radius: 6px;
+background: #191919;
+margin-bottom: 40px;
+}
+.episod1__period,
+.episod2__period,
+.episod3__period,
+.inform__period{
+    margin-top:40px;
+    color: #118DA8;
+font-family: "DM Sans";
+font-size: 17px;
+font-style: normal;
+font-weight: 400;
+line-height: 27px;
+margin-bottom: 18px;
+}
+.inform__period{
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.episod1__title,
+.episod2__title,
+.episod3__title,
+.inform__title{
+    color: #FFF;
+font-family: "DM Sans";
+font-size: 64px;
+font-style: normal;
+font-weight: 400;
+line-height: 70.4px; /* 110% */
+letter-spacing: 2.56px;
+margin-bottom: 28px;
+}
+.inform__title{
+    line-height: 79.2px;
+}
+.episod2__label{
+    display: inline;
+    color: #FFF;
+
+font-size: 17px;
+font-style: normal;
+font-weight: 400;
+line-height: 27px;
+border-radius: 6px;
+background: #191919;
+padding-left: 16px;
+padding-right: 16px;
+}
+
+.episod__text{
+    color: rgba(255, 255, 255, 0.70);
+font-family:" DM Sans";
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+line-height: 33px;
+}
+.inform__container{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.inform__content{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 60px;
+}
+.inform__logo img{
+    margin-top: 160px;
+    margin-bottom: 18px;
+    padding: 34px 17px 40px 17px ;
+    border-radius: 400px;
+background: #118DA8;
+}
+.inform__text{
+    color: rgba(255, 255, 255, 0.70);
+font-family: "DM Sans";
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+line-height: 33px; /
+}
+.text1{
+    margin-bottom: 33px;
+}
+.formylar{
+   
+}
+.form__container{
+
+}
+.form__content{
+display: flex;
+justify-content: space-between;
+margin: 100px 50px;
+background-color: #000;
+border-radius: 32px;
+padding: 60px 60px 75px 60px;
+
+}
+.form__label{
+    color: #118DA8;
+font-family: "DM Sans";
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 27px; 
+}
+.form__title{
+    color: #FFF;
+font-family: "DM Sans";
+font-size: 72px;
+font-style: normal;
+font-weight: 400;
+line-height: 79.2px;
+}
+.form__send{
+
+}
+.form__type{
+    color: rgba(255, 255, 255, 0.70);
+padding: 26px 0 27px 19px;
+font-family: DM Sans;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 28.8px;
+    border-radius: 6px;
+    border: 1px solid #191919;
+    width: 522px;
+height: 82px;
+    background: #191919;
+}
+.name{
+    margin-bottom: 20px;
+}
+.sub{
+    padding: 9px 10px;
+}
+.reviews__content{
+    margin: 100px 50px;
+}
+.reviews__list{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(2, 1fr);
+grid-column-gap: 16px;
+grid-row-gap: 16px;
+}
+.contents{
+padding-right: 50px;
+    padding-top: 55px;
+    padding-left: 50px;
+    border-radius: 32px;
+    background: #000;
+   
+}
+.content__img {
+   /* width: 18px;
+   height: 17px;
+ clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+ 
+  background-color: yellow;
+  background-repeat: repeat-x; */
+}
+.content__title::before{
+    content: "☆☆☆☆☆";
+    top:-30px;
+    color: yellow;
+    position: absolute;
+}
+.content__title{
+    position: relative;
+    margin-top: 20px;
+    color: #FFF;
+margin-bottom: 20px;
+font-family:" DM Sans";
+font-size: 36px;
+font-style: normal;
+font-weight: 400;
+line-height: 43.2px;
+}
+.content__label{
+    color: rgba(255, 255, 255, 0.70);
+
+font-family: "DM Sans";
+font-size: 23px;
+font-style: normal;
+font-weight: 400;
+line-height: 28.8px;
+}
+.label{
+    margin-bottom: 50px;
+}
+.footer{
+    background-color: #363f46;
+}
+.footer__content{
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+padding-top: 100px;
+    margin-right: 50px;
+    margin-left: 50px;
+    padding-bottom: 115px;
+}
+/* .footer__logo{
+    display: flex;
+} */
+.logo__list{
+    display: flex;
+    margin-top: 10px;
+    gap:10px; 
+}
+.logo-img svg{
+    border-radius: 70px;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255,255,255,.1);
+    border-radius: 50%;
+    padding: 5px;
+
+}
+.logo__logo svg:hover,
+.logo__logo svg:focus{
+    border-radius: 100px;
+    background-color: aqua;
+    color: #363f46;
+    transition-duration: 1s;
+}
+
+.footer__list{
+    padding-left: 60px;
+}
+.footer__item,
+.footer__item2{
+    color: #FFF;
+
+font-family: "DM Sans";
+font-size: 17px;
+font-style: normal;
+font-weight: 400;
+line-height: 27px;
+}
+.button:hover{
+    background-color: aqua;
+    color: #363f46;
+    transition-duration: 1s;
+}
+.form__type:hover,
+.form__type:focus{
+    background-color:#FFF;
+    color:green;
+    transition-duration: 1s;
+}
